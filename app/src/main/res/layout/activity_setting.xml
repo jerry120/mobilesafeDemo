@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mobilesafe2.activity.SettingActivity">
+
+    <TextView
+        style="@style/Style_title"
+        android:text="设置中心"/>
+
+    <com.example.mobilesafe2.view.SettingItemView
+        android:id="@+id/siv_autoupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:bgType="first"
+        app:title="自动更新"
+        >
+
+    </com.example.mobilesafe2.view.SettingItemView>
+
+    <com.example.mobilesafe2.view.SettingItemView
+        android:id="@+id/siv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgType="middle"
+        app:title="归属地显示风格"
+        >
+
+    </com.example.mobilesafe2.view.SettingItemView>
+
+    <com.example.mobilesafe2.view.SettingItemView
+        android:id="@+id/siv_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bgType="last"
+        app:title="归属地风格显示设置"
+        >
+
+    </com.example.mobilesafe2.view.SettingItemView>
+</LinearLayout>
